@@ -1,24 +1,14 @@
 import tkinter as tk
-from tkinter import ttk
 import os
 import tempfile
 import glob
 import argparse
 
 def _calc_pos():
-    # Get the temporary 
     temp_dir = tempfile.gettempdir()
     all_files = os.listdir(temp_dir)
     pattern = os.path.join(temp_dir, "SCP_*")
-
-    # Get matching files
     matching_files = glob.glob(pattern)
-    if matching_files:
-        for file in matching_files:
-            print
-    else:
-        print
-        # we are the first queueist!
     queuepos = len(matching_files)
     file = tempfile.NamedTemporaryFile(delete=True, prefix=f"SCP_{queuepos}_", dir=temp_dir)
 
