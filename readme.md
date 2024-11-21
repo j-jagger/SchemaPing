@@ -28,10 +28,9 @@ Very simple.
 ![image](https://github.com/user-attachments/assets/cab69632-6807-4df5-a91a-2f9b0b423a3f)
 
 ```
-path/to/your/schemaping -t Hello_World! -c We_are_connected!!!
+path/to/your/schemaping.py -t "Hello World!" -c "We are connected!!!"
 ```
-Since you can't use spaces in cmd args, SchemaPing resolves this by substituting spaces for underscores!
-e.g, "Testing_123." in the example will come out as "Testing 123."
+Easy!
 
 # "What does build.py do?"
 build.py generates an .exe of schemaping.py using pyinstaller, which is assumed to be in the same dir.
